@@ -73,8 +73,8 @@ my optimized version on Cyclone V to measure the improvement.
 | Metric | Baseline | Optimized |
 |---|---|---|
 | Logic (ALMs) | 337 | 315 |
-| Registers | — | 213 |
-| DSP Blocks | — | 1 |
+| Registers | 20 | 213 |
+| DSP Blocks | 1 | 1 |
 | Improvement | — | 6.5% fewer ALMs |
 
 The reduction comes from three main things I did differently
