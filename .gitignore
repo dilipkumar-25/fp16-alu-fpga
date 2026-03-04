@@ -1,0 +1,41 @@
+# ── Quartus Generated Files ──
+*.qpf
+*.qsf
+*.qws
+*.qdf
+*.qmsg
+*.qarxml
+*.rpt
+*.smsg
+*.pin
+*.sof
+*.pof
+*.jdi
+*.cbx
+*.rbx
+*.mpf
+*.cr.mti
+*.vstf
+c5_pin_model_dump.txt
+fp16_alu_top_description.txt
+
+# ── Quartus Folders ──
+incremental_db/
+output_files/
+db/
+greybox_tmp/
+
+# ── ModelSim / Questa ──
+transcript
+*.vcd
+*.wlf
+work/
+simulation/
+
+# ── Python Cache ──
+__pycache__/
+*.pyc
+
+# ── Windows ──
+Thumbs.db
+desktop.ini
