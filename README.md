@@ -163,7 +163,9 @@ fp16_alu/
 ## About
 
 **Dunna Dilip Kumar**
+
 B.Tech 
+
 Electronics and Communication Engineering
 
 Built this project to understand FP hardware from the ground
