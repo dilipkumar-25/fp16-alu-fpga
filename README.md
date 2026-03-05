@@ -1,7 +1,7 @@
 # FP16 ALU — IEEE 754 Half-Precision Floating Point ALU
 
 A pipelined floating point ALU I built from scratch in Verilog,
-targeting Intel Cyclone V FPGA. It supports 12 operations and
+targeting Intel MAX 10 FPGA. It supports 12 operations and
 is designed around the same number format used in modern AI chips.
 
 ---
@@ -68,14 +68,13 @@ complete. This is the same principle used in real processors.
 ## Synthesis Results
 
 I synthesized both a baseline (non-optimized) version and
-my optimized version on Cyclone V to measure the improvement.
+my optimized version on MAX 10 to measure the improvement.
 
-| Metric | Baseline | Optimized |
-|---|---|---|
-| Logic (ALMs) | 337 | 315 |
-| Registers | 20 | 213 |
-| DSP Blocks | 1 | 1 |
-| Improvement | — | 6.5% fewer ALMs |
+| Metric | Baseline | Optimized | Improvement |
+|---|---|---|---|
+| Logic - MAX 10 (LCs) | 783 | 679 | 13.3% reduction |
+| Registers | 20 | 225 | Pipelined |
+| Target FPGA | MAX 10 | MAX 10 | Same device |
 
 The reduction comes from three main things I did differently
 from the baseline:
@@ -157,7 +156,7 @@ fp16_alu/
 - Quartus Prime Lite 25.3.1 (Synthesis)
 - ModelSim (Simulation)
 - Python 3.12 + numpy (Golden reference model)
-- Intel Cyclone V FPGA
+- Intel MAX 10 FPGA (10M50DAF484C7G)
 
 ---
 
